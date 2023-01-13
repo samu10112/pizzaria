@@ -4,18 +4,18 @@ function getMenu(){
 var htmldata="";
 menuListArray.sort();
 for(var i=0;i<menuListArray.length;i++){
-    htmldata=htmldata+ menuListArray[1] + '<br>'
+    htmldata=htmldata+ menuListArray[i] + '<br>';
 }
-document.getElementById("displaymenu").innerHTML = hymldata;
+document.getElementById("displayMenu").innerHTML = htmldata;
 
 }
 
 function addItem(){
 var htmldata;
-var imgtags='<img id="im1" src=image/pizzaImg.png>'
+var imgtags='<img id="im1" src=pizzaImg.png>';
 var item=document.getElementById("addItem").value;
 menuListArray.sort();
-htmldata=""
+htmldata="";
 for(var i=0;i<menuListArray.length;i++){
     htmldata=htmldata+imgtags+ menuListArray[i]+'<br>';
 }
